@@ -37,8 +37,9 @@ rng = np.random.default_rng()
 
 def get_client():
     return OpenAI(
-        # TODO: Make sure this API key is set in the environment variable (best not to hard code it)
-        api_key=os.environ["SAMBANOVA_API_KEY"],
+        #TODO: Make sure this API key is set in the environment variable (best not to hard code it)
+        #api_key=os.environ["SAMBANOVA_API_KEY"],
+        api_key='961d9950-5e66-4805-bebc-54e364b60934',
         base_url="https://api.sambanova.ai/v1",
     )
 

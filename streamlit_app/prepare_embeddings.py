@@ -1,13 +1,18 @@
 import os
 import sys
 
+from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import pandas as pd
 import torch
 from tqdm import trange
 
-build_project_path = os.environ['BUILD_PROJECT_PATH']
+#build_project_path = os.environ['BUILD_PROJECT_PATH']
+load_dotenv()
+build_project_path = os.environ.get('BUILD_PROJECT_PATH')
+#build_project_path = os.environ['BUILD_PROJECT_PATH']
+print("Build project path:", build_project_path)
 streamlit_app_data_path = os.path.join(build_project_path, 'streamlit_app', 'data')
 
 def get_device():
@@ -27,6 +32,7 @@ print(f'Using device: {device}')
 default_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2', device=device)
 
 fine_tuned_model_path = os.path.join(streamlit_app_data_path, 'fine_tuned_model')
+print(fine_tuned_model_path)
 fine_tuned_model = SentenceTransformer(fine_tuned_model_path, device=device)
 
 # Compute embeddings

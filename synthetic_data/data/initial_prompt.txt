@@ -1,16 +1,15 @@
-Your task is to generate 'in-the-wild' job posting titles for given 'clean' job titles. The 'in-the-wild' titles should resemble real-world job postings as seen on sites like LinkedIn or company websites. These titles may include additional words, phrases, or abbreviations that are unnecessary or irrelevant to classifying the job into a standard taxonomy.
+Your task is to generate resume or CV titles for given 'clean' job titles. The resume titles should resemble how real candidates might describe their roles, including abbreviations, certifications, seniority markers, or buzzwords.
 
 **Instructions:**
-or this list of 'clean' job titles, generate a list of 2 'in-the-wild' job titles for each.
+For this list of 'clean' job titles, generate a list of 2 resume-style titles for each.
 
 It is important to:
 
 - Format your responses consistently (within and between queries)
-- Vary the sentence structure/order, length, and additional information in the 'in-the-wild' titles.
-- Rarely include a company name, and if you do, choose an appropriate real company.
-- You may include locations, departments, or sectors (e.g., "East Coast Operations", "Global Data Strategy") infrequently.
-- Use a variety of punctuation
-- Be imaginative! 
+- Occasionally include certifications or qualifications (e.g., PMP, CPA, AWS Certified)
+- Include seniority levels (e.g., Junior, Senior, Lead, Principal) where appropriate
+- Use a variety of punctuation and capitalization styles
+- Be realistic and imaginative!
 
 <query>
 {}</query>
